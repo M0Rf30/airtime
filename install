@@ -29,7 +29,7 @@ showhelp () {
     -d, --ignore-dependencies
                 Don't install binary dependencies
     -w, --web-user=WEB_USER
-                Set the apache web user. Defaults to www-data. Only change
+                Set the apache web user. Defaults to http. Only change
                 this setting if you've changed the default apache web user
     -r, --web-root=WEB_ROOT
                 Set the web root for Airtime files
@@ -56,7 +56,7 @@ showversion () {
     exit 0
 }
 
-web_user="www-data"
+web_user="http"
 web_root=""
 in_place="f"
 postgres="f"

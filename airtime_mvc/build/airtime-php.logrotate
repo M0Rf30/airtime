@@ -6,6 +6,6 @@
   notifempty
   sharedscripts
   postrotate
-    chown www-data:www-data /var/log/airtime/
+    chown http:http /var/log/airtime/
   endscript
 }

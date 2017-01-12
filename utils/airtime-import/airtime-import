@@ -1,4 +1,4 @@
-#!/usr/bin/python2 import sys
+#!/usr/bin/python22 import sys
 import os
 import logging
 from configobj import ConfigObj
