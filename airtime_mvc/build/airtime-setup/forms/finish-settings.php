@@ -7,9 +7,9 @@
     <p>
         Looks like you're almost done! As a final step, please run the following commands from the terminal:
     </p>
-    <pre style="text-align: left">sudo service airtime-playout start
-sudo service airtime-liquidsoap start
-sudo service airtime-media-monitor start</pre>
+    <pre style="text-align: left">sudo systemctl start airtime-playout
+sudo systemctl start airtime-liquidsoap
+sudo systemctl start airtime-media-monitor</pre>
     <p>
         Click "Done!" to bring up the Airtime configuration checklist; if your configuration is all green, 
         you're ready to get started with your personal Airtime station!

@@ -194,8 +194,8 @@ $result = $r1 && $r2;
                             ?>">
                             Check that the airtime-media-monitor service is installed correctly in <code>/etc/init</code>, 
                             and ensure that it's running with
-                            <br/><code>initctl list | grep airtime-media-monitor</code><br/>
-                            If not, try running <code>sudo service airtime-media-monitor start</code>
+                            <br/><code>systemctl status | grep airtime-media-monitor</code><br/>
+                            If not, try running <code>sudo systemctl start airtime-media-monitor</code>
                         <?php
                         }
                         ?>
@@ -214,8 +214,8 @@ $result = $r1 && $r2;
                             ?>">
                             Check that the airtime-playout service is installed correctly in <code>/etc/init</code>, 
                             and ensure that it's running with
-                            <br/><code>initctl list | grep airtime-playout</code><br/>
-                            If not, try running <code>sudo service airtime-playout restart</code>
+                            <br/><code>systemctl status | grep airtime-playout</code><br/>
+                            If not, try running <code>sudo systemctl restart airtime-playout</code>
                         <?php
                         }
                         ?>
@@ -234,8 +234,8 @@ $result = $r1 && $r2;
                             ?>">
                             Check that the airtime-liquidsoap service is installed correctly in <code>/etc/init</code>, 
                             and ensure that it's running with
-                            <br/><code>initctl list | grep airtime-liquidsoap</code><br/>
-                            If not, try running <code>sudo service airtime-liquidsoap restart</code>
+                            <br/><code>systemctl status | grep airtime-liquidsoap</code><br/>
+                            If not, try running <code>sudo systemctl restart airtime-liquidsoap</code>
                         <?php
                         }
                         ?>
