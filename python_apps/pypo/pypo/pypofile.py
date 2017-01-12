@@ -11,7 +11,7 @@ import stat
 
 from std_err_override import LogWriter
 
-CONFIG_PATH = '/etc/airtime/airtime.conf'
+CONFIG_PATH = '/etc/airtime/airtime.ini'
 
 #need to wait for Python 2.7 for this..
 #logging.captureWarnings(True)

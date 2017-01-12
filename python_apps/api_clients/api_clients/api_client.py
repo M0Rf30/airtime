@@ -205,7 +205,7 @@ class RequestProvider(object):
 
 
 class AirtimeApiClient(object):
-    def __init__(self, logger=None,config_path='/etc/airtime/airtime.conf'):
+    def __init__(self, logger=None,config_path='/etc/airtime/airtime.ini'):
         if logger is None: self.logger = logging
         else: self.logger = logger
 

@@ -16,7 +16,7 @@ class AirtimeMediaConfig:
 
         # loading config file
         try:
-            config = ConfigObj('/etc/airtime/airtime.conf')
+            config = ConfigObj('/etc/airtime/airtime.ini')
             self.cfg = config
         except Exception, e:
             logger.info('Error loading config: ', e)
