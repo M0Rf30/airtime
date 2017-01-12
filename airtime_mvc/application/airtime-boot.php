@@ -16,7 +16,7 @@ function exception_error_handler($errno, $errstr, $errfile, $errline) {
     //Check if the statement that threw this error wanted its errors to be
     //suppressed. If so then return without with throwing exception.
     if (0 === error_reporting()) return;
-    throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
+    //throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
     return false;
 }
 
