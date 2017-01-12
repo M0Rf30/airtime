@@ -18,10 +18,6 @@ else:
             pypo_files.append(os.path.join(root, filename))
         
     data_files = [
-                  ('/etc/init', ['install/upstart/airtime-playout.conf.template']),
-                  ('/etc/init', ['install/upstart/airtime-liquidsoap.conf.template']),
-                  ('/etc/init.d', ['install/sysvinit/airtime-playout']),
-                  ('/etc/init.d', ['install/sysvinit/airtime-liquidsoap']),
                   ('/var/log/airtime/pypo', []),
                   ('/var/log/airtime/pypo-liquidsoap', []),
                   ('/var/tmp/airtime/pypo', []),
@@ -65,6 +61,6 @@ setup(name='airtime-playout',
 
 # Reload the initctl config so that playout services works
 if data_files:
-    print "Reloading initctl configuration"
-    #call(['initctl', 'reload-configuration'])
+    print "Reloading systemtctl configuration"
+    #call(['systemctl', 'daemon-reload'])
     print "Run \"sudo systemctl start airtime-playout\" and \"sudo systemctl start airtime-liquidsoap\""
